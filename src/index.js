@@ -1,9 +1,14 @@
 import MainScreen from './MainScreen'
-import Drawer from './Drawer'
-import AppBar from './AppBar'
+import Drawer, { DrawerNav, DrawerNavExpandable } from './Drawer'
+import AppBar, { AppBarLeftIcon, AppBarRightIcon, AppBarTitle } from './AppBar'
 
 export {
   MainScreen,
   Drawer,
-  AppBar
+  DrawerNav,
+  DrawerNavExpandable,
+  AppBar,
+  AppBarLeftIcon,
+  AppBarRightIcon,
+  AppBarTitle
 }
