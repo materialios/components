@@ -1,0 +1,10 @@
+.MainScreen {
+  position: absolute;
+  left: 0;
+  height: 100%;
+}
+
+.Landscape.Desktop .MainScreen {
+  left: 320px;
+  z-index: 1610;
+}

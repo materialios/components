@@ -1,0 +1,53 @@
+{
+  "name": "@materialios/components",
+  "version": "0.1.1",
+  "description": "@materialios's components",
+  "private": false,
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf lib && npx babel src --out-dir lib && npx include-css --origin=./src --destination=./lib && npm --no-git-tag-version version patch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/materialios/components.git"
+  },
+  "keywords": [
+    "@materialios/components",
+    "materialios",
+    "components",
+    "material",
+    "design",
+    "android",
+    "ios",
+    "ui",
+    "ux"
+  ],
+  "author": "Muhammad Rendra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/materialios/components/issues"
+  },
+  "homepage": "https://github.com/materialios/components#readme",
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-react",
+        {
+          "runtime": "automatic"
+        }
+      ]
+    ]
+  },
+  "peerDependencies": {
+    "@materialios/contexts": ">=0.1.12",
+    "react": ">=16.8.0",
+    "react-router-dom": ">=5.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.1",
+    "@babel/preset-react": "^7.12.13",
+    "@mnrendra/include-css": "^0.1.6"
+  }
+}

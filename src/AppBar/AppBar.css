@@ -1,0 +1,42 @@
+.AppBar {
+  width: 100%;
+  height: 56px;
+  padding: 4px;
+  background: #009688;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .24);
+}
+
+/* Portrait */
+
+.Portrait.Handset .AppBar {
+  height: 56px;
+  padding: 4px;
+}
+
+.Portrait.Tablet .AppBar {
+  height: 64px;
+  padding: 8px 12px;
+}
+
+.Portrait.Desktop .AppBar {
+  height: 72px;
+  padding: 12px;
+}
+
+/* Landscape */
+
+.Landscape.Handset .AppBar {
+  height: 48px;
+  padding: 0 12px;
+}
+
+.Landscape.Tablet .AppBar {
+  height: 56px;
+  padding: 4px 12px;
+}
+
+.Landscape.Desktop .AppBar {
+  height: 64px;
+  padding: 8px 12px;
+  box-shadow: 8px 4px 8px rgba(0, 0, 0, .24);
+}

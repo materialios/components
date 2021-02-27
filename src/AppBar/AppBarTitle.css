@@ -1,0 +1,29 @@
+.AppBarTitle {
+  font-size: 20px;
+  padding: 12px 4px;
+  color: #FFFFFF;
+}
+
+.Portrait.Handset .AppBarTitle {
+  padding: 12px 4px;
+}
+
+.Portrait.Tablet .AppBarTitle {
+  padding: 12px 12px;
+}
+
+.Portrait.Desktop .AppBarTitle {
+  padding: 12px 12px;
+}
+
+.Landscape.Handset .AppBarTitle {
+  padding: 12px;
+}
+
+.Landscape.Tablet .AppBarTitle {
+  padding: 12px;
+}
+
+.Landscape.Desktop .AppBarTitle {
+  padding: 12px;
+}

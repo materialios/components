@@ -1,0 +1,29 @@
+.DrawerNav {
+  width: 100%;
+  height: 48px;
+  background: inherit;
+  overflow: hidden;
+  padding: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  font-weight: inherit;
+}
+
+.DrawerNav:hover {
+  background: #00897B;
+}
+
+.DrawerNavExpandable .DrawerNav {
+  padding: 16px 16px 16px 40px;
+}
+
+.Tablet .DrawerNav,
+.Desktop .DrawerNav {
+  padding: 16px 24px;
+}
+
+.Tablet .DrawerNavExpandable .DrawerNav,
+.Desktop .DrawerNavExpandable .DrawerNav {
+  padding: 16px 24px 16px 48px;
+}
