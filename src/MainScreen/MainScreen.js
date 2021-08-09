@@ -8,6 +8,8 @@ import './MainScreen.css'
 const MainScreen = ({ children, onChange = () => {} }) => {
   const { orientation, device, width } = useContext(ResponsiveContext)
 
+  console.log('susu-mainscreen')
+
   onChange({ orientation, device, width })
 
   const style = {
