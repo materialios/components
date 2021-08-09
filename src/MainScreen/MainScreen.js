@@ -8,8 +8,6 @@ import './MainScreen.css'
 const MainScreen = ({ children, onChange = () => {} }) => {
   const { orientation, device, width } = useContext(ResponsiveContext)
 
-  console.log('susu-mainscreen')
-
   onChange({ orientation, device, width })
 
   const style = {
@@ -18,6 +16,7 @@ const MainScreen = ({ children, onChange = () => {} }) => {
 
   return (
     <div className='MainScreen' style={style}>
+      asdadadadasdadasda
       <Switch>
         {children}
       </Switch>
