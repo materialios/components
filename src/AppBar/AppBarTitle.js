@@ -3,7 +3,7 @@ import './AppBarTitle.css'
 const AppBarTitle = ({ title }) => {
   return (
     <div className='AppBarTitle'>
-      {title}
+      -{title}-
     </div>
   )
 }

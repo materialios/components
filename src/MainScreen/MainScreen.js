@@ -16,7 +16,6 @@ const MainScreen = ({ children, onChange = () => {} }) => {
 
   return (
     <div className='MainScreen' style={style}>
-      asdadadadasdadasda
       <Switch>
         {children}
       </Switch>
