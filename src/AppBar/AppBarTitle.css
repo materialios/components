@@ -2,6 +2,7 @@
   font-size: 20px;
   padding: 12px 4px;
   color: #FFFFFF;
+  cursor: default;
 }
 
 .Portrait.Handset .AppBarTitle {
