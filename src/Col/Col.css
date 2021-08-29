@@ -1,0 +1,135 @@
+.Col {
+  width: 100%;
+  height: auto;
+}
+
+/* Portrait */
+
+.Portrait.Handset .Col {
+  padding: 8px;
+}
+
+.Portrait.Tablet .Col,
+.Portrait.Desktop .Col {
+  padding: 12px;
+}
+
+/* Landscape */
+
+.Landscape.Handset .Col {
+  padding: 8px 12px;
+}
+
+.Landscape.Tablet .Col,
+.Landscape.Desktop .Col {
+  padding: 12px;
+}
+
+/* */
+.Col.Col-Portrait-Handset-1,
+.Col.Col-Portrait-Tablet-1,
+.Col.Col-Portrait-Desktop-1,
+.Col.Col-Landscape-Handset-1,
+.Col.Col-Landscape-Tablet-1,
+.Col.Col-Landscape-Desktop-1 {
+  width: 8.333333333%
+}
+
+.Col.Col-Portrait-Handset-2,
+.Col.Col-Portrait-Tablet-2,
+.Col.Col-Portrait-Desktop-2,
+.Col.Col-Landscape-Handset-1,
+.Col.Col-Landscape-Tablet-1,
+.Col.Col-Landscape-Desktop-1 {
+  width: 16.666666666%
+}
+
+.Col.Col-Portrait-Handset-3,
+.Col.Col-Portrait-Tablet-3,
+.Col.Col-Portrait-Desktop-3,
+.Col.Col-Landscape-Handset-1,
+.Col.Col-Landscape-Tablet-1,
+.Col.Col-Landscape-Desktop-1 {
+  width: 25%
+}
+
+.Col.Col-Portrait-Handset-4,
+.Col.Col-Portrait-Tablet-4,
+.Col.Col-Portrait-Desktop-4,
+.Col.Col-Landscape-Handset-1,
+.Col.Col-Landscape-Tablet-1,
+.Col.Col-Landscape-Desktop-1 {
+  width: 33.333333333%
+}
+
+.Col.Col-Portrait-Handset-5,
+.Col.Col-Portrait-Tablet-5,
+.Col.Col-Portrait-Desktop-5,
+.Col.Col-Landscape-Handset-1,
+.Col.Col-Landscape-Tablet-1,
+.Col.Col-Landscape-Desktop-1 {
+  width: 41.666666666%
+}
+
+.Col.Col-Portrait-Handset-6,
+.Col.Col-Portrait-Tablet-6,
+.Col.Col-Portrait-Desktop-6,
+.Col.Col-Landscape-Handset-1,
+.Col.Col-Landscape-Tablet-1,
+.Col.Col-Landscape-Desktop-1 {
+  width: 50%
+}
+
+.Col.Col-Portrait-Handset-7,
+.Col.Col-Portrait-Tablet-7,
+.Col.Col-Portrait-Desktop-7,
+.Col.Col-Landscape-Handset-1,
+.Col.Col-Landscape-Tablet-1,
+.Col.Col-Landscape-Desktop-1 {
+  width: 58.333333333%
+}
+
+.Col.Col-Portrait-Handset-8,
+.Col.Col-Portrait-Tablet-8,
+.Col.Col-Portrait-Desktop-8,
+.Col.Col-Landscape-Handset-1,
+.Col.Col-Landscape-Tablet-1,
+.Col.Col-Landscape-Desktop-1 {
+  width: 66.666666666%
+}
+
+.Col.Col-Portrait-Handset-9,
+.Col.Col-Portrait-Tablet-9,
+.Col.Col-Portrait-Desktop-9,
+.Col.Col-Landscape-Handset-1,
+.Col.Col-Landscape-Tablet-1,
+.Col.Col-Landscape-Desktop-1 {
+  width: 75%
+}
+
+.Col.Col-Portrait-Handset-10,
+.Col.Col-Portrait-Tablet-10,
+.Col.Col-Portrait-Desktop-10,
+.Col.Col-Landscape-Handset-1,
+.Col.Col-Landscape-Tablet-1,
+.Col.Col-Landscape-Desktop-1 {
+  width: 83.333333333%
+}
+
+.Col.Col-Portrait-Handset-11,
+.Col.Col-Portrait-Tablet-11,
+.Col.Col-Portrait-Desktop-11,
+.Col.Col-Landscape-Handset-1,
+.Col.Col-Landscape-Tablet-1,
+.Col.Col-Landscape-Desktop-1 {
+  width: 91.666666666%
+}
+
+.Col.Col-Portrait-Handset-12,
+.Col.Col-Portrait-Tablet-12,
+.Col.Col-Portrait-Desktop-12,
+.Col.Col-Landscape-Handset-1,
+.Col.Col-Landscape-Tablet-1,
+.Col.Col-Landscape-Desktop-1 {
+  width: 100%
+}

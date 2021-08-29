@@ -3,6 +3,7 @@ import Drawer, { DrawerNav, DrawerNavExpandable } from './Drawer'
 import AppBar, { AppBarLeftIcon, AppBarRightIcon, AppBarTitle } from './AppBar'
 import Container from './Container'
 import Row from './Row'
+import Col from './Col'
 
 export {
   MainScreen,
@@ -14,5 +15,6 @@ export {
   AppBarRightIcon,
   AppBarTitle,
   Container,
-  Row
+  Row,
+  Col
 }
