@@ -10,18 +10,18 @@
   padding: 16px;
 }
 
-.Portrait.Tablet .Col,
-.Portrait.Desktop .Col {
+.Portrait.Tablet .CardText,
+.Portrait.Desktop .CardText {
   padding: 24px;
 }
 
 /* Landscape */
 
-.Landscape.Handset .Card {
+.Landscape.Handset .CardText {
   padding: 16px;
 }
 
-.Landscape.Tablet .Card,
-.Landscape.Desktop .Card {
+.Landscape.Tablet .CardText,
+.Landscape.Desktop .CardText {
   padding: 24px;
 }
