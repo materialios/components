@@ -6,6 +6,7 @@ const CardMedia = ({
   height = 'auto',
   img
 }) => {
+  console.log('img', img)
   const thisStyle = {
     height: height || 'auto',
     backgroundImage: `url(${img})` || 'none'
