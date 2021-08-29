@@ -1,6 +1,6 @@
 {
   "name": "@materialios/components",
-  "version": "0.2.38",
+  "version": "0.2.39",
   "description": "@materialios's components",
   "private": false,
   "main": "lib/index.js",
