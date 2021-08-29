@@ -2,7 +2,6 @@
   width: 100%;
   height: auto;
   padding: 16px 8px;
-  float: none;
   margin: auto;
 }
 
@@ -10,32 +9,20 @@
 
 .Portrait.Handset .Container {
   padding: 16px 8px;
-  margin-top: 56px;
 }
 
 .Portrait.Tablet .Container,
 .Portrait.Desktop .Container {
   padding: 24px 12px;
-  margin-top: 72px;
-}
-
-.Portrait.Tablet .Container {
-  margin-top: 64px;
 }
 
 /* Landscape */
 
 .Landscape.Handset .Container {
   padding: 16px 12px;
-  margin-top: 48px;
 }
 
 .Landscape.Tablet .Container,
 .Landscape.Desktop .Container {
   padding: 24px 12px;
-  margin-top: 64px;
-}
-
-.Landscape.Tablet .Container {
-  margin-top: 56px;
 }

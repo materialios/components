@@ -27,7 +27,8 @@ const Container = ({ children, style = {} }) => {
   const containerWidth = getWidth(orientation, device, size, mainScreenWidth)
 
   const thisStyle = {
-    width: `${containerWidth}px`
+    width: `${containerWidth}px`,
+    margin: `0 ${(mainScreenWidth - containerWidth) / 2}px`
   }
 
   return (
