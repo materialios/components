@@ -6,16 +6,16 @@ import './Container.css'
 
 const getWidth = (orientation, device, size, width = 0) => {
   if (orientation === 'Landscape') {
-    if (device === 'Handset') return width - 24 // (width - (2 x 12))
+    if (device === 'Handset') return width - 48 // (width - (2 x 12))
     else {
-      if (width > 1120) return 1120 - 120 // (max-width - (2 x (24 + 24 + 12)))
-      else return width - 120 // (width - (2 x (24 + 24 + 12)))
+      if (width > 1120) return 1120 - 148 // (max-width - (2 x (24 + 24 + 12)))
+      else return width - 148 // (width - (2 x (24 + 24 + 12)))
     }
   } else {
-    if (device === 'Handset') return width - 16 // (width - (2 x 8))
+    if (device === 'Handset') return width - 32 // (width - (2 x 8))
     else {
-      if (size === 'Medium') return width - 24 // (width - (2 x 12))
-      else return width - 120 // (width - (2 x (24 + 24 + 12)))
+      if (size === 'Medium') return width - 48 // (width - (2 x 12))
+      else return width - 148 // (width - (2 x (24 + 24 + 12)))
     }
   }
 }
