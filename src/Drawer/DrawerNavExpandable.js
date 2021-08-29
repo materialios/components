@@ -1,5 +1,7 @@
 import { useState } from 'react'
 
+import { ExpandMoreIcon } from '@materialios/icons'
+
 import './DrawerNavExpandable.css'
 
 const DrawerNavExpandable = ({ name = '', children }) => {
@@ -15,7 +17,7 @@ const DrawerNavExpandable = ({ name = '', children }) => {
           {name}
         </div>
         <div className='DrawerNavExpandable-Nav-Icon'>
-          icon
+          <ExpandMoreIcon />
         </div>
       </div>
       {children}
