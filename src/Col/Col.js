@@ -1,6 +1,6 @@
-import './Row.css'
+import './Col.css'
 
-const Row = ({
+const Col = ({
   children,
   portraitHandset = 0,
   portraitTablet = 0,
@@ -20,10 +20,10 @@ const Row = ({
   if (landscapeDesktop) colClasses = colClasses + ' Col-Landscape-Desktop-' + landscapeDesktop
 
   return (
-    <div className={`Row${colClasses ? ' ' + colClasses : ''}${className ? ' ' + className : ''}`} style={style}>
+    <div className={`Col${colClasses ? ' ' + colClasses : ''}${className ? ' ' + className : ''}`} style={style}>
       {children}
     </div>
   )
 }
 
-export default Row
+export default Col
