@@ -20,18 +20,27 @@ const getWidth = (orientation, device, size, width = 0) => {
   }
 }
 
+const getPadding = (orientation, device) => {
+  if (orientation === 'Landscape') {
+    if (device === 'Handset') return '8px 12px'
+    else return '12px'
+  } else {
+    if (device === 'Handset') return '8px'
+    else return '12px'
+  }
+}
+
 const Container = ({ children, withPadding = false, style = {} }) => {
   const { orientation, device, size, width } = useContext(ResponsiveContext)
 
   const mainScreenWidth = orientation === 'Landscape' && device === 'Desktop' ? (width - 320) : width
   const containerWidth = getWidth(orientation, device, size, mainScreenWidth)
-  const padding = orientation === 'Landscape' && device === 'Handset' ? 16 : 12
+  const padding = getPadding(orientation, device)
 
   const thisStyle = {
     width: `${containerWidth}px`,
     margin: `0 ${(mainScreenWidth - containerWidth) / 2}px`,
-    paddingLeft: `${withPadding ? padding : 0}px`,
-    paddingRight: `${withPadding ? padding : 0}px`
+    padding: `${withPadding ? padding : 0}`
   }
 
   return (
