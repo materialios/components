@@ -25,6 +25,7 @@ const Container = ({ children, style = {} }) => {
 
   const mainScreenWidth = orientation === 'Landscape' && device === 'Desktop' ? (width - 320) : width
   const containerWidth = getWidth(orientation, device, size, mainScreenWidth)
+  console.log('containerWidth', containerWidth)
 
   const thisStyle = {
     width: `${containerWidth}px`
