@@ -1,29 +1,7 @@
 .CardText {
   width: 100%;
   height: auto;
-  padding: 16px;
+  padding: 8px;
   font-weight: 400;
   font-size: 14px;
-}
-
-/* Portrait */
-
-.Portrait.Handset .CardText {
-  padding: 16px;
-}
-
-.Portrait.Tablet .CardText,
-.Portrait.Desktop .CardText {
-  padding: 24px 16px;
-}
-
-/* Landscape */
-
-.Landscape.Handset .CardText {
-  padding: 16px;
-}
-
-.Landscape.Tablet .CardText,
-.Landscape.Desktop .CardText {
-  padding: 24px 16px;
 }
