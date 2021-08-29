@@ -1,0 +1,28 @@
+.Container {
+  width: 100%;
+  padding: 8px;
+  float: none;
+  margin: auto;
+}
+
+/* Portrait */
+
+.Portrait.Handset .Container {
+  padding: 8px;
+}
+
+.Portrait.Tablet .Container,
+.Portrait.Desktop .Container {
+  padding: 12px;
+}
+
+/* Landscape */
+
+.Landscape.Handset .Container {
+  padding: 8px 12px;
+}
+
+.Landscape.Tablet .Container,
+.Landscape.Desktop .Container {
+  padding: 12px;
+}
