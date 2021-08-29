@@ -1,6 +1,10 @@
 .CardMedia {
   width: 100%;
   padding-top: 100%;
-  background: #424242;
+  background: #9E9E9E;
+  background-color: #9E9E9E;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   border-radius: 4px 4px 0 0;
 }

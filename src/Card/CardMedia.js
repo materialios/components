@@ -2,11 +2,13 @@ import './CardMedia.css'
 
 const CardMedia = ({
   children,
+  style = {},
   height = 'auto',
-  style = {}
+  img
 }) => {
   const thisStyle = {
-    height: height || 'auto'
+    height: height || 'auto',
+    backgroundImage: img || 'none'
   }
 
   return (
