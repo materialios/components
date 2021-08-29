@@ -4,6 +4,7 @@ import AppBar, { AppBarLeftIcon, AppBarRightIcon, AppBarTitle } from './AppBar'
 import Container from './Container'
 import Row from './Row'
 import Col from './Col'
+import Card, { CardText } from './Card'
 
 export {
   MainScreen,
@@ -16,5 +17,7 @@ export {
   AppBarTitle,
   Container,
   Row,
-  Col
+  Col,
+  Card,
+  CardText
 }

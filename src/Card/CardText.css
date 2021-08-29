@@ -1,0 +1,27 @@
+.CardText {
+  width: 1000%;
+  height: auto;
+  padding: 16px;
+}
+
+/* Portrait */
+
+.Portrait.Handset .CardText {
+  padding: 16px;
+}
+
+.Portrait.Tablet .Col,
+.Portrait.Desktop .Col {
+  padding: 24px;
+}
+
+/* Landscape */
+
+.Landscape.Handset .Card {
+  padding: 16px;
+}
+
+.Landscape.Tablet .Card,
+.Landscape.Desktop .Card {
+  padding: 24px;
+}
