@@ -11,9 +11,20 @@
   height: 48px;
   background: inherit;
   overflow: hidden;
-  padding: 16px;
+  padding: 12px 16px;
   cursor: pointer;
   font-weight: inherit;
+}
+
+.DrawerNavExpandable .DrawerNavExpandable-Nav .DrawerNavExpandable-Nav-Text {
+  padding: 4px 0;
+}
+
+.DrawerNavExpandable .DrawerNavExpandable-Nav .DrawerNavExpandable-Nav-Icon {
+  float: right;
+  width: 24px;
+  height: 24px;
+  background: #424242;
 }
 
 .DrawerNavExpandable .DrawerNavExpandable-Nav:hover {
@@ -26,5 +37,5 @@
 
 .Tablet .DrawerNavExpandable .DrawerNavExpandable-Nav ,
 .Desktop .DrawerNavExpandable .DrawerNavExpandable-Nav  {
-  padding: 16px 24px;
+  padding: 12px 24px;
 }

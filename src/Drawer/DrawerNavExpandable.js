@@ -11,7 +11,12 @@ const DrawerNavExpandable = ({ name = '', children }) => {
         className='DrawerNavExpandable-Nav'
         onClick={() => setIsExpanded(!isExpanded)}
       >
-        {name}
+        <div className='DrawerNavExpandable-Nav-Text'>
+          {name}
+        </div>
+        <div className='DrawerNavExpandable-Nav-Icon'>
+          icon
+        </div>
       </div>
       {children}
     </div>
