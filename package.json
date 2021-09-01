@@ -1,6 +1,6 @@
 {
   "name": "@materialios/components",
-  "version": "0.2.54",
+  "version": "0.2.55",
   "description": "@materialios's components",
   "private": false,
   "main": "lib/index.js",
@@ -40,7 +40,7 @@
     ]
   },
   "peerDependencies": {
-    "@materialios/contexts": ">=0.1.12",
+    "@materialios/contexts": "^0.1.13",
     "react": ">=16.8.0",
     "react-router-dom": ">=5.0.0"
   },
