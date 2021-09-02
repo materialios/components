@@ -7,16 +7,16 @@ import './Container.css'
 const getPadding = (orientation, device, size, width = 0, withPadding = false) => {
   if (withPadding) {
     if (orientation === 'Landscape') {
-      if (device === 'Handset') return `8px ${withPadding ? 8 : 0}px`
+      if (device === 'Handset') return '8px 8px'
       else {
-        if (width > 1120) return `12px ${withPadding ? ((width - 1120) / 2) + 60 : ((width - 1120) / 2) + 48}px`
-        else return `12px ${withPadding ? 60 : 48}px`
+        if (width > 1120) return `12px ${((width - 1120) / 2) + 60}px`
+        else return '12px 60px'
       }
     } else {
-      if (device === 'Handset') return `8px ${withPadding ? 8 : 0}px`
+      if (device === 'Handset') return '8px 8px'
       else {
-        if (size === 'Medium') return `12px ${withPadding ? 60 : 48}px`
-        else return `12px ${withPadding ? ((width - 720) / 2) + 60 : ((width - 720) / 2) + 48}px`
+        if (size === 'Medium') return '12px 60px'
+        else return `12px ${((width - 720) / 2) + 60}px`
       }
     }
   } else {
@@ -29,7 +29,7 @@ const getPadding = (orientation, device, size, width = 0, withPadding = false) =
     } else {
       if (device === 'Handset') return '0 0'
       else {
-        if (size === 'Medium') return '0 48px'
+        if (size === 'Medium') return '0 0'
         else return `0 ${((width - 720) / 2) + 48}px`
       }
     }
