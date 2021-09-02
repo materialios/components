@@ -15,21 +15,23 @@ const DrawerNavExpandable = ({ name = '', children }) => {
 
   useEffect(() => {
     for (let i = 0; i < children.length; i++) {
-      console.log('abc', [
-        children[i],
-        children[i].props ? children[i].props.href : 'susi',
-        location.pathname,
-        children[i].props && children[i].props.href === location.pathname
-      ])
       if (children[i].props && children[i].props.href === location.pathname) setIsExpanded(true)
     }
   }, [location, children])
+
+  const handleClick = () => {
+    const drawerNavExpandables = document.querySelectorAll('.DrawerNavExpandable')
+    for (let i = 0; i < drawerNavExpandables.length; i++) {
+      drawerNavExpandables[i].classList.remove('expanded')
+    }
+    setIsExpanded(!isExpanded)
+  }
 
   return (
     <div className={`DrawerNavExpandable${isExpanded ? ' expanded' : ''}`}>
       <div
         className='DrawerNavExpandable-Nav'
-        onClick={() => setIsExpanded(!isExpanded)}
+        onClick={handleClick}
       >
         <div className='DrawerNavExpandable-Nav-Text'>
           {name}
