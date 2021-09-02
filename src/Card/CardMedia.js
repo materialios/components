@@ -18,10 +18,8 @@ const CardMedia = ({
   const thisStyle = {
     height: height || 'auto',
     backgroundImage: `url(${img})` || 'none',
-    borderRadius: isMediaOnly ? 'inherit inherit inherit inherit' : 'inherit inherit 0 0'
+    borderRadius: isMediaOnly ? '4px 4px 4px 4px' : '4px 4px 0 0'
   }
-
-  console.log('isMediaOnly', [isMediaOnly, thisStyle])
 
   return (
     <div className='CardMedia' style={{ ...thisStyle, ...style }}>
