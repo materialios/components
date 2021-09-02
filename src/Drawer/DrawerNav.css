@@ -10,8 +10,12 @@
   font-weight: inherit;
 }
 
-.DrawerNav:hover {
+.DrawerNav.Active {
   background: #546E7A;
+}
+
+.DrawerNav:hover {
+  background: #455A64;
 }
 
 .DrawerNavExpandable .DrawerNav {
