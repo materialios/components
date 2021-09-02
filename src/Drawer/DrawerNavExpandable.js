@@ -20,10 +20,10 @@ const DrawerNavExpandable = ({ name = '', children }) => {
   }, [location, children])
 
   const handleClick = () => {
-    const drawerNavExpandables = document.querySelectorAll('.DrawerNavExpandable')
-    for (let i = 0; i < drawerNavExpandables.length; i++) {
-      drawerNavExpandables[i].classList.remove('expanded')
-    }
+    // const drawerNavExpandables = document.querySelectorAll('.DrawerNavExpandable')
+    // for (let i = 0; i < drawerNavExpandables.length; i++) {
+    //   drawerNavExpandables[i].classList.remove('expanded')
+    // }
     setIsExpanded(!isExpanded)
   }
 
