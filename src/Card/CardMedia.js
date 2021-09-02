@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 import './CardMedia.css'
 
@@ -8,14 +8,17 @@ const CardMedia = ({
   height = 'auto',
   img
 }) => {
+  const [isMediaOnly, setIsMediaOnly] = useState(false)
+
   useEffect(() => {
     const thisEl = document.querySelector('.CardMedia')
-    console.log('card-media', [thisEl, thisEl.parentNode, thisEl.parentNode.childNodes])
+    thisEl.parentNode.childNodes.length === 1 && setIsMediaOnly(true)
   }, [])
 
   const thisStyle = {
     height: height || 'auto',
-    backgroundImage: `url(${img})` || 'none'
+    backgroundImage: `url(${img})` || 'none',
+    borderRadius: isMediaOnly ? 'inherit inherit inherit inherit' : 'inherit inherit 0 0'
   }
 
   return (
