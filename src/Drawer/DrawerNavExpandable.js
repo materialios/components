@@ -14,17 +14,14 @@ const DrawerNavExpandable = ({ name = '', children }) => {
   const [isExpanded, setIsExpanded] = useState(false)
 
   useEffect(() => {
-    for (const child in children) {
+    for (let i = 0; i < children.length; i++) {
       console.log('child', [
-        children,
-        children[0],
-        children[0].props,
-        child,
-        child.props ? child.props.href : 'susi',
+        children[i],
+        children[i].props ? children[i].props.href : 'susi',
         location.pathname,
-        child.props && child.props.href === location.pathname
+        children[i].props && children[i].props.href === location.pathname
       ])
-      if (child.props && child.props.href === location.pathname) setIsExpanded(true)
+      if (children[i].props && children[i].props.href === location.pathname) setIsExpanded(true)
     }
   }, [location, children])
 
