@@ -16,6 +16,8 @@ const DrawerNavExpandable = ({ name = '', children }) => {
   useEffect(() => {
     for (const child in children) {
       console.log('child', [
+        children,
+        child,
         child.props ? child.props.href : 'susi',
         location.pathname,
         child.props && child.props.href === location.pathname
