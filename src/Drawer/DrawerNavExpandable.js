@@ -10,6 +10,8 @@ import './DrawerNavExpandable.css'
 const DrawerNavExpandable = ({ name = '', children }) => {
   const [isExpanded, setIsExpanded] = useState(false)
 
+  console.log('DrawerNavExpandable-children', children)
+
   return (
     <div className={`DrawerNavExpandable${isExpanded ? ' expanded' : ''}`}>
       <div
