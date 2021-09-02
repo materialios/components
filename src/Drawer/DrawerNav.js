@@ -5,7 +5,12 @@ import { DrawerContext } from '@materialios/contexts'
 
 import './DrawerNav.css'
 
-const DrawerNav = ({ name = '', href = '', onClick = () => {} }) => {
+const DrawerNav = ({
+  name = '',
+  href = '',
+  isDefault = false,
+  onClick = () => {}
+}) => {
   const { setDrawer } = useContext(DrawerContext)
   const location = useLocation()
 
@@ -14,11 +19,16 @@ const DrawerNav = ({ name = '', href = '', onClick = () => {} }) => {
     setDrawer({ show: false })
   }
 
-  console.log('location', location)
+  const getIsActive = (path = '') => {
+    if (path === '/' && isDefault) return true
+    else if (path === href) return true
+  }
+
+  const isActive = getIsActive(location.path)
 
   return (
     <Link
-      className='DrawerNav'
+      className={`DrawerNav${isActive ? ' Active' : ''}`}
       to={href}
       onClick={() => handleClick({ name, href })}
     >
