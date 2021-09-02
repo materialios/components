@@ -24,6 +24,8 @@ const DrawerNav = ({
     else if (path === href) return true
   }
 
+  console.log('location-' + href, location)
+
   const isActive = getIsActive(location.path)
 
   return (
