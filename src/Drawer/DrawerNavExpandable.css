@@ -34,7 +34,8 @@
   height: auto;
 }
 
-.Tablet .DrawerNavExpandable .DrawerNavExpandable-Nav ,
+.Landscape.Handset .DrawerNavExpandable .DrawerNavExpandable-Nav,
+.Tablet .DrawerNavExpandable .DrawerNavExpandable-Nav,
 .Desktop .DrawerNavExpandable .DrawerNavExpandable-Nav  {
   padding: 12px 24px;
 }
