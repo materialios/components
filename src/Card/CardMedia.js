@@ -1,3 +1,5 @@
+import { useEffect } from 'react'
+
 import './CardMedia.css'
 
 const CardMedia = ({
@@ -6,6 +8,11 @@ const CardMedia = ({
   height = 'auto',
   img
 }) => {
+  useEffect(() => {
+    const thisEl = document.querySelector('.CardMedia')
+    console.log('card-media', [thisEl, thisEl.parentNode, thisEl.parentNode.childNodes])
+  }, [])
+
   const thisStyle = {
     height: height || 'auto',
     backgroundImage: `url(${img})` || 'none'
