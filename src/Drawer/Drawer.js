@@ -4,13 +4,20 @@ import { DrawerContext } from '@materialios/contexts'
 
 import './Drawer.css'
 
-const Drawer = ({ children }) => {
+const Drawer = ({
+  children,
+  brand
+}) => {
   const { drawer, setDrawer } = useContext(DrawerContext)
 
   return (
     <div className={`Drawer${drawer.show ? ' show' : ''}`}>
       <div className='Drawer-Board'>
-        <div className='Drawer-Board-Header'>{}</div>
+        <div className='Drawer-Board-Header'>
+          <div className='Drawer-Board-Header-Content'>
+            {brand}
+          </div>
+        </div>
         <div className='Drawer-Board-Body'>
           {children}
         </div>
