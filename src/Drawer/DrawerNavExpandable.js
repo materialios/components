@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 
 import {
   ExpandMoreIcon,
@@ -8,7 +9,16 @@ import {
 import './DrawerNavExpandable.css'
 
 const DrawerNavExpandable = ({ name = '', children }) => {
+  const location = useLocation()
+
   const [isExpanded, setIsExpanded] = useState(false)
+
+  useEffect(() => {
+    console.log('DrawerNavExpandable-useEffect', [location, children])
+    for (const child in children) {
+      if (child.props.href === location.pathname) setIsExpanded(true)
+    }
+  }, [location, children])
 
   console.log('DrawerNavExpandable-children', children)
 
