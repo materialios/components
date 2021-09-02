@@ -6,7 +6,8 @@ import './Drawer.css'
 
 const Drawer = ({
   children,
-  brand
+  brand = '',
+  footer = ''
 }) => {
   const { drawer, setDrawer } = useContext(DrawerContext)
 
@@ -21,6 +22,13 @@ const Drawer = ({
         <div className='Drawer-Board-Body'>
           {children}
         </div>
+        {footer && (
+          <div className='Drawer-Board-Footer'>
+            <div className='Drawer-Board-Footer-Content'>
+              {footer}
+            </div>
+          </div>
+        )}
       </div>
       <div className='Drawer-Block' onClick={() => setDrawer({ show: !drawer.show })}>{}</div>
     </div>
