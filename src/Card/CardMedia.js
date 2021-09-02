@@ -21,6 +21,8 @@ const CardMedia = ({
     borderRadius: isMediaOnly ? 'inherit inherit inherit inherit' : 'inherit inherit 0 0'
   }
 
+  console.log('isMediaOnly', [isMediaOnly, thisStyle])
+
   return (
     <div className='CardMedia' style={{ ...thisStyle, ...style }}>
       {children}
