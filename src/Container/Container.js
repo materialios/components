@@ -14,10 +14,8 @@ const getPadding = (orientation, device, size, width = 0, withPadding = false) =
       }
     } else {
       if (device === 'Handset') return '8px 8px'
-      else {
-        if (size === 'Medium') return '12px 60px'
-        else return `12px ${((width - 720) / 2) + 60}px`
-      }
+      else if (device === 'Tablet') return '12px 60px'
+      else return `12px ${((width - 720) / 2) + 60}px`
     }
   } else {
     if (orientation === 'Landscape') {
@@ -28,10 +26,8 @@ const getPadding = (orientation, device, size, width = 0, withPadding = false) =
       }
     } else {
       if (device === 'Handset') return '0 0'
-      else {
-        if (size === 'Medium') return '0 0'
-        else return `0 ${((width - 720) / 2) + 48}px`
-      }
+      else if (device === 'Tablet') return '0 0'
+      else return `0 ${((width - 720) / 2) + 48}px`
     }
   }
 }
