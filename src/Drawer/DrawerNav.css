@@ -22,11 +22,13 @@
   padding: 16px 16px 16px 40px;
 }
 
+.Landscape.Handset .DrawerNav,
 .Tablet .DrawerNav,
 .Desktop .DrawerNav {
   padding: 16px 24px;
 }
 
+.Landscape.Handset .DrawerNavExpandable .DrawerNav,
 .Tablet .DrawerNavExpandable .DrawerNav,
 .Desktop .DrawerNavExpandable .DrawerNav {
   padding: 16px 24px 16px 48px;

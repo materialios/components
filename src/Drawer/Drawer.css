@@ -38,14 +38,14 @@
 }
 
 .Drawer .Drawer-Board .Drawer-Board-Header .Drawer-Board-Header-Content {
-  padding: 12px 4px;
+  padding: 12px;
   font-size: 20px;
   color: #FFFFFF;
   cursor: default;
 }
 
 .Drawer .Drawer-Board .Drawer-Board-Footer .Drawer-Board-Footer-Content {
-  padding: 15px 4px;
+  padding: 15px 12px;
   font-size: 16px;
   font-weight: 400;
   color: rgba(255, 255, 255, .75);
@@ -83,26 +83,10 @@
   padding: 4px;
 }
 
-.Portrait.Handset .Drawer .Drawer-Board .Drawer-Board-Header .Drawer-Board-Header-Content {
-  padding: 12px 4px;
-}
-
-.Portrait.Handset .Drawer .Drawer-Board .Drawer-Board-Footer .Drawer-Board-Footer-Content {
-  padding: 15px 4px;
-}
-
 .Portrait.Tablet .Drawer .Drawer-Board .Drawer-Board-Header,
 .Portrait.Tablet .Drawer .Drawer-Board .Drawer-Board-Footer {
   height: 64px;
   padding: 8px 12px;
-}
-
-.Portrait.Tablet .Drawer .Drawer-Board .Drawer-Board-Header .Drawer-Board-Header-Content {
-  padding: 12px 12px;
-}
-
-.Portrait.Tablet .Drawer .Drawer-Board .Drawer-Board-Footer .Drawer-Board-Footer-Content {
-  padding: 15px 12px;
 }
 
 .Portrait.Desktop .Drawer .Drawer-Board .Drawer-Board-Header,
@@ -111,26 +95,10 @@
   padding: 12px;
 }
 
-.Portrait.Desktop .Drawer .Drawer-Board .Drawer-Board-Header .Drawer-Board-Header-Content {
-  padding: 12px 12px;
-}
-
-.Portrait.Desktop .Drawer .Drawer-Board .Drawer-Board-Footer .Drawer-Board-Footer-Content {
-  padding: 15px 12px;
-}
-
 .Landscape.Handset .Drawer .Drawer-Board .Drawer-Board-Header,
 .Landscape.Handset  .Drawer .Drawer-Board .Drawer-Board-Footer {
   height: 48px;
   padding: 0 12px;
-}
-
-.Landscape.Handset .Drawer .Drawer-Board .Drawer-Board-Header .Drawer-Board-Header-Content {
-  padding: 12px;
-}
-
-.Landscape.Handset .Drawer .Drawer-Board .Drawer-Board-Footer .Drawer-Board-Footer-Content {
-  padding: 15px 12px;
 }
 
 .Landscape.Tablet .Drawer .Drawer-Board .Drawer-Board-Header,
@@ -139,26 +107,10 @@
   padding: 4px 12px;
 }
 
-.Landscape.Tablet .Drawer .Drawer-Board .Drawer-Board-Header .Drawer-Board-Header-Content {
-  padding: 12px;
-}
-
-.Landscape.Tablet .Drawer .Drawer-Board .Drawer-Board-Footer .Drawer-Board-Footer-Content {
-  padding: 15px 12px;
-}
-
 .Landscape.Desktop .Drawer .Drawer-Board .Drawer-Board-Header,
 .Landscape.Desktop .Drawer .Drawer-Board .Drawer-Board-Footer {
   height: 64px;
   padding: 8px 12px;
-}
-
-.Landscape.Desktop .Drawer .Drawer-Board .Drawer-Board-Header .Drawer-Board-Header-Content {
-  padding: 12px;
-}
-
-.Landscape.Desktop .Drawer .Drawer-Board .Drawer-Board-Footer .Drawer-Board-Footer-Content {
-  padding: 15px 12px;
 }
 
 /* desktop */
