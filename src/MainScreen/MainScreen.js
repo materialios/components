@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { BrowserRouter as Switch } from 'react-router-dom'
+import { Routes } from 'react-router-dom'
 
 import { ResponsiveContext } from '@materialios/contexts'
 
@@ -16,9 +16,9 @@ const MainScreen = ({ children, onChange = () => {} }) => {
 
   return (
     <div className='MainScreen' style={style}>
-      <Switch>
+      <Routes>
         {children}
-      </Switch>
+      </Routes>
     </div>
   )
 }
