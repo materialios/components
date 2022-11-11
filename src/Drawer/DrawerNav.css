@@ -11,11 +11,11 @@
 }
 
 .DrawerNav.Active {
-  background: #455A64;
+  background: #00796B;
 }
 
 .DrawerNav:hover {
-  background: #546E7A;
+  background: #00897B;
 }
 
 .DrawerNavExpandable .DrawerNav {
