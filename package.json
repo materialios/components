@@ -1,6 +1,6 @@
 {
   "name": "@materialios/components",
-  "version": "0.2.86",
+  "version": "0.2.87",
   "description": "@materialios's components",
   "private": false,
   "main": "lib/index.js",
@@ -51,6 +51,6 @@
     "@mnrendra/include-css": "^0.1.6"
   },
   "dependencies": {
-    "@materialios/icons": "^0.1.19"
+    "@materialios/icons": "^0.1.20"
   }
 }

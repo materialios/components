@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { Switch } from 'react-router-dom'
+import { BrowserRouter as Switch } from 'react-router-dom'
 
 import { ResponsiveContext } from '@materialios/contexts'
 
